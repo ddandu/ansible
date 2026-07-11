@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    NAME:from play leave
+    NAME: from play leave
   vars_files: #Call variable from other yaml
   - course.yaml
   vars_prompt:  #Read variable from prompt
