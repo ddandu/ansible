@@ -1,12 +1,12 @@
--name: play lavel varaibles
- hosts: local
- connection: local
- vars:
-  COURSE: Ansible
-  DURATION: 20HRS
-  Trainer: DevDandu
- tasks:
- - name: print the coure info
-   ansible.builtin.debug:
-    msg: "course name is: {{ COURSE }}, Duration: {{ DURATION }},Trainer: {{ Trainer}}"
+- name: play lavel varaibles
+  hosts: local
+  connection: local
+  vars:
+   COURSE: Ansible
+   DURATION: 20HRS
+   Trainer: DevDandu
+  tasks:
+  - name: print the coure info
+    ansible.builtin.debug:
+     msg: "course name is: {{ COURSE }}, Duration: {{ DURATION }},Trainer: {{ Trainer}}"
  
