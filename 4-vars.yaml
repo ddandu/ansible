@@ -1,10 +1,8 @@
 - name: play lavel varaibles
   hosts: local
   connection: local
-  vars:
-   COURSE: Ansible
-   DURATION: 20HRS
-   Trainer: DevDandu
+  vars_files: 
+  -coure.yaml 
   tasks:
   - name: print the coure info
     ansible.builtin.debug:
