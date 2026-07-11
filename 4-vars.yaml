@@ -1,6 +1,6 @@
 -name: play lavel varaibles
  hosts: local
- connecion: local
+ connection: local
  vars:
   COURSE: Ansible
   DURATION: 20HRS
