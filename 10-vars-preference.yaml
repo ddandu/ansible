@@ -1,6 +1,8 @@
 - name: vars preference
   hosts: local
   connection: local
+  vars:
+    NAME:from play leave
   vars_files: #Call variable from other yaml
   - course.yaml
   vars_prompt:  #Read variable from prompt
@@ -9,10 +11,10 @@
     private: false  
   tasks:  #pass variable from arguments
   - name: testing variables preference
-     vars:
+    vars:
       NAME: from task level
-      ansible.builtin.debug:
-       msg: "Name: {{ NAME }}"
+    ansible.builtin.debug:
+     msg: "Name: {{ NAME }}"
 
 # 1. args or command line
 # 2. from task
