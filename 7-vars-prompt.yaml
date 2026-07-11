@@ -1,4 +1,4 @@
-- name: play lavel varaibles
+- name: varaible from prompt
   hosts: local
   connection: local
   vars_prompt:
