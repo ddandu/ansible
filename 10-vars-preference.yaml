@@ -1,7 +1,7 @@
 - name: vars preference
   hosts: local
   connection: local
-    vars:
+  vars:
       NAME: from play level
     vars_files: #Call variable from other yaml
     - course.yaml
