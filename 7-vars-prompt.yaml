@@ -1,0 +1,15 @@
+- name: play lavel varaibles
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: username
+    prompt: What is your name?
+    private: false
+  - name: password
+    prompt: What is your passoword?
+    private: ture
+    
+  tasks:
+  - name: print credentias
+    ansible.builtin.debug:
+     msg: "Hello, the username is {{ username }}, The password is {{ password }}"
