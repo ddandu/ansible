@@ -1,0 +1,7 @@
+- name: play lavel varaibles
+  hosts: local
+  connection: local 
+  tasks:
+  - name: print the coure info
+    ansible.builtin.debug:
+     msg: "course name is: {{ COURSE }}, Duration: {{ DURATION }},Trainer: {{ TRAINER }}"
