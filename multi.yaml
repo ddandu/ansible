@@ -3,19 +3,19 @@
   tasks:
   - name: play-01 and Task-01
     ansible.builtin.debug:
-    msg: "Hello form play-01 and Task-01"
+     msg: "Hello form play-01 and Task-01"
 
   - name: play-01 and Task-02
     ansible.builtin.debug:
-    msg: "Hello form play-01 and Task-02"
+     msg: "Hello form play-01 and Task-02"
 
 - name: Play-02
   hosts: frontend
   tasks:
   - name: play-02 and Task-01
     ansible.builtin.debug:
-    msg: "Hello form play-01 and Task-01"
+     msg: "Hello form play-01 and Task-01"
 
   - name: play-02 and Task-02
     ansible.builtin.debug:
-    msg: "Hello form play-02 and Task-02"
+     msg: "Hello form play-02 and Task-02"
