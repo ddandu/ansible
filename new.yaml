@@ -1,0 +1,20 @@
+- name: Data type declaration
+  hosts: local
+  connection: local
+  vars:
+    course: "Ansible with devops"
+    duration: 120
+    is_alive: true
+    # list
+    tools:
+      - linux
+      - shell
+      - ansible
+    concepts:
+      cloud: ansible
+      cm: mycousr
+
+  tasks:
+    - name: print course info
+      ansible.builtin.debug:
+        msg: "The course: {{ course }}, duration: {{ duration }}, is_alive: {{ is_alive }}, tools are: {{ tools }}, concepts are: {{ concepts }}"
