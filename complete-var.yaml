@@ -1,6 +1,6 @@
 - name: vars preference
   hosts: local
-   connection: local
+  connection: local
   vars: #5
     NAME: from play leave
   vars_files:   #3
