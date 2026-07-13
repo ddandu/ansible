@@ -1,20 +1,20 @@
 - name: vars preference
   hosts: local
-  connection: local
+   connection: local
   vars: #5
     NAME: from play leave
   vars_files:   #3
-  - course.yaml
+  - course.yaml    #NAME: from files
   vars_prompt:  #4 
   - name: NAME
-    prompt: What is your NAME?
-    private: false  
+     prompt: What is your NAME?
+      private: false  
   tasks:  
   - name: testing variables preference
    # vars:
    #   NAME: from task level  #2
     ansible.builtin.debug:
-     msg: "Name----: {{ NAME }}"    #1  
+     msg: "Name----: {{ NAME }}"    #1  #6  inventory.ini - [local:vars] NAME=from inventory
 
 # 1. args or command line
 # 2. from task
@@ -22,3 +22,4 @@
 # 4. prompt
 # 5. play level
 # 6. inventory
+
