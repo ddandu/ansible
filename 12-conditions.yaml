@@ -8,4 +8,4 @@
    - name: Check number is grater or less
      ansible.builtin.debug:
       msg: "Give number is {{ number }} is lees then 10"
-     when: number < 10 
+     when: number < 50 
