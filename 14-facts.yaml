@@ -2,14 +2,14 @@
   hosts: local
   connection: local
   tasks:
-   - name: install nginx if redhat
-     ansible.builtin.dnf:
-      name: nginx
-      state: latest
-  when: ansible_os_famaily == "RedHat"
+    - name: install nginx if RedHat
+      ansible.builtin.dnf:
+        name: nginx
+        state: latest
+      when: ansible_os_family == "RedHat"
 
-   - name: Install nginx if redhat
-    ansible.builtin.apt:
-     name: nginx
-     state: latest
-  When: ansible_os_famaily == "Debian"  
+    - name: install nginx if Debian
+      ansible.builtin.apt:
+        name: nginx
+        state: latest
+      when: ansible_os_family == "Debian"
