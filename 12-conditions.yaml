@@ -1,0 +1,11 @@
+- name: conditions checks
+  hosts: local
+  connection: local
+  vars:
+   number: 5 
+  
+  tasks:
+   - name: Check number is grater or less
+     ansible.builtin.debug:
+      msg: "The give number is {{ nnumber }}"
+     when: number < 10 
