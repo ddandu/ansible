@@ -1,0 +1,5 @@
+1 Declare the variables inside yaml
+2 Declare vars preference 
+3 Call variables from other yaml file
+4 Pass variables as prompt
+5 Call variables from inventory file:

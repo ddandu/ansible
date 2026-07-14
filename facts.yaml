@@ -1,0 +1,6 @@
+- hosts: all
+  gather_facts: true
+  tasks:
+    - name: Print OS family
+      ansible.builtin.debug:
+        msg: "This host belongs to {{ ansible_os_family }}"
