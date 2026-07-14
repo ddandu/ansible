@@ -1,8 +1,7 @@
 - name: facts
   hosts: local
   connection: local
-  gather_facts: false
+  gather_facts: true
   tasks:
-    - name: Print OS family
-      ansible.builtin.debug:
-        msg: "This host belongs to {{ ansible_os_family }}"
+    - name: Run a simple command
+      ansible.builtin.command: uptime
