@@ -1,7 +1,7 @@
 - name: facts
   hosts: local
   connection: local
-  gather_facts: true
+  gather_facts: false
   tasks:
     - name: Print OS family
       ansible.builtin.debug:
