@@ -1,4 +1,6 @@
-- hosts: all
+- name: facts
+  hosts: local
+  connection: local
   gather_facts: true
   tasks:
     - name: Print OS family
